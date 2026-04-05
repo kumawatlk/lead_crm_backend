@@ -14,7 +14,7 @@ const JWT_SECRET = process.env.JWT_SECRET;
 
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL,
+    origin: process.env.FRONTEND_URL || 'https://lead-crm-frontend-nine.vercel.app',
     credentials: true,
   }),
 );
